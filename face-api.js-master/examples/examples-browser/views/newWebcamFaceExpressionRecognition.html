@@ -148,9 +148,9 @@
         return setTimeout(() => onPlay())
 
       /*FaceMatcher*/
-      const labeledDescriptors = await loadLabeledImages()
-      console.log(labeledDescriptors)
-      const faceMatcher = new faceapi.FaceMatcher(labeledDescriptors, 0.5)
+      // const labeledDescriptors = await loadLabeledImages()
+      // console.log(labeledDescriptors)
+      // const faceMatcher = new faceapi.FaceMatcher(labeledDescriptors, 0.5)
       /**/
 
       const options = getFaceDetectorOptions()
@@ -225,10 +225,10 @@
         //   const bestMatch = faceMatcher.findBestMatch(fd.descriptor)
         //   console.log(bestMatch.toString())
         // })
-        if (result) {
-          const bestMatch = faceMatcher.findBestMatch(result.descriptor)
-          console.log(bestMatch.toString())
-        }
+        // if (result) {
+        //   const bestMatch = faceMatcher.findBestMatch(result.descriptor)
+        //   console.log(bestMatch.toString())
+        // }
 
       }
 
